@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">
+        Select A Option 
+        <select id="selection">
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="Js">JS</option>
+            <option value="Python">Python</option>
+            <option value="C++">CSS</option>
+            <option value="Cotlin">Cotlin</option>
+            <option value="Ruby">Ruby</option>
+            <option value="Machine Language"></option>
+        </select>
+    </label>
+    <p class="">My Favourite Programming Language is:  <span id="demo"></span></p>
+    <script>
+        const select = document.getElementById("selection");
+        select.addEventListener("change",function(){
+        const value = document.getElementById("selection").value;
+        document.getElementById("demo").innerHTML = value;
+        }
+    );
+
+    </script>
+</body>
+</html>
