@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- SERIAL : 1 - ONCLICK EVENT -->
+
+    <button id="btn">Click This Button</button>
+
+    <!-- INLINE ONCLICK -->
+     <button onclick="alert('You have clicked on a button created using Inline OnCLick Event')">Inline Onclick</button>
+     
+     <!-- Creating Function in HTML -->
+      <button class="btn2" onclick="myfun()">Function In HTML</button>
+
+    <script>
+        // ONCLICK PROPERTISE
+
+        let btn = document.getElementById("btn")
+        btn.onclick = function(){
+            alert("You have Clicka button. Coding is fun");
+        }
+        // FOR FUNCTION IN HTML
+
+        function myfun(){
+            alert("It has been created FUCTION in HTML");
+        }        
+    </script> 
+</body>
+</html>
